@@ -1,0 +1,34 @@
+/* AddExpense.css */
+.add-expense-container {
+  margin-left: 260px;
+  padding: 2rem;
+}
+.add-expense-container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 1rem;
+}
+.expense-form input,
+.expense-form select {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.expense-form button {
+  padding: 0.7rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.expense-form button:hover {
+  background-color: #1e40af;
+}

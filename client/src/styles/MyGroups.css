@@ -1,0 +1,240 @@
+/* MyGroups.css */
+.my-groups-container {
+  margin-left: 0 !important;
+  padding: 1.5rem !important;
+  margin-top: 60px !important;
+}
+
+@media (min-width: 768px) {
+  .my-groups-container {
+    margin-left: 250px !important;
+    margin-top: 0 !important;
+  }
+}
+
+.my-groups-container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.my-group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.my-group-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.3s ease !important;
+  border: none !important;
+  margin-bottom: 0 !important;
+}
+
+.my-group-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+.my-group-card-header {
+  padding-bottom: 0.5rem !important;
+  border-bottom: none !important;
+}
+
+.my-group-card-heading {
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.my-group-card-category {
+  color: #718096 !important;
+  font-size: 0.875rem !important;
+}
+
+.my-group-expenses {
+  margin: 1rem 0;
+}
+
+.my-group-expense-amount {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  color: #3182CE !important;
+}
+
+.my-group-expense-label {
+  color: #718096 !important;
+  font-size: 0.875rem !important;
+}
+
+.my-group-balances {
+  margin: 1rem 0;
+}
+
+.balance-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #F7FAFC;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.balance-user {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.balance-amount {
+  font-weight: 600;
+}
+
+.balance-positive {
+  color: #38A169 !important;
+}
+
+.balance-negative {
+  color: #E53E3E !important;
+}
+
+.my-group-settle-btn {
+  width: 100% !important;
+  border-radius: 12px !important;
+  margin-top: 1rem !important;
+}
+
+.my-group-settle-btn:hover {
+  transform: translateY(-2px) !important;
+}
+
+/* Remove the colored line from card top */
+.my-group-card > div:first-child {
+  display: none !important;
+}
+
+/* Search and tabs styles */
+.my-group-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .my-group-controls {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.my-group-tabs {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .my-group-tabs {
+    width: auto;
+  }
+}
+
+.my-group-search {
+  width: 100%;
+  max-width: 300px;
+}
+
+@media (min-width: 768px) {
+  .my-group-search {
+    width: auto;
+  }
+}
+
+/* Header section styles */
+.my-group-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .my-group-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.my-group-title-section h1 {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.my-group-title-section p {
+  color: #718096 !important;
+  font-size: 1.125rem !important;
+}
+
+/* Management section styles */
+.my-group-management {
+  background: linear-gradient(135deg, #F0FFF4 0%, #E6FFFA 100%) !important;
+  border-radius: 20px !important;
+  padding: 2rem !important;
+  margin-bottom: 2rem !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme="dark"] .my-group-management {
+  background: linear-gradient(135deg, #22543D 0%, #234E52 100%) !important;
+}
+
+.my-group-management-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.my-group-management-icon {
+  font-size: 2rem !important;
+  color: #38A169 !important;
+}
+
+.my-group-management-text h3 {
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.my-group-management-text p {
+  color: #718096 !important;
+}
+
+/* Empty state styles */
+.my-group-empty {
+  text-align: center;
+  padding: 3rem 1rem !important;
+}
+
+.my-group-empty-icon {
+  font-size: 3rem !important;
+  color: #A0AEC0 !important;
+  opacity: 0.5 !important;
+  margin-bottom: 1rem !important;
+}
+
+.my-group-empty-text h3 {
+  font-size: 1.5rem !important;
+  color: #718096 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.my-group-empty-text p {
+  color: #718096 !important;
+  margin-bottom: 2rem !important;
+}
